@@ -1,13 +1,22 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Название теста:</strong>
   <%= @test.title %>
 </p>
 
 <p>
-  <strong>Level:</strong>
+  <strong>Уровень:</strong>
   <%= @test.level %>
 </p>
 
+<p>
+  <%= link_to 'Создать вопрос', new_test_question_path(@test)%>
+</p>
 
-<%= link_to 'Edit', edit_test_path(@test) %>
-<%= link_to 'Back', tests_path %>
+<h3>Вопросы теста:</h3>
+
+<table>
+  <%= render @questions %>
+</table>
+</br>
+<%= link_to 'Редактировать тест', edit_test_path(@test) %>
+<%= link_to 'Назад', tests_path %>
