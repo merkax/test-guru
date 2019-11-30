@@ -1,6 +1,6 @@
 <%= form_with model: @test, local: true do |form| %>
   <%= render 'shared/errors', resource: @test %>
-  <%= form.hidden_field :author_id, :value => 1 %>
+  <%= form.hidden_field :author_id, value: 1 %>
   <p>
     <%= form.label :title %>
     <%= form.text_field :title, id: :test_title %>
