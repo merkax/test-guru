@@ -5,14 +5,16 @@ class QuestionsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
 
   def index
-    render inline: 'Вопросы теста: <%= @test.questions.inspect %>'
+    # render inline: 'Вопросы теста: <%= @test.questions.inspect %>'
+     @questions = Question.all
   end
 
   def show
-    render inline: 'Вопрос: <%= @question.inspect %>'
+    # render inline: 'Вопрос: <%= @question.inspect %>'
   end
 
   def new
+    @question = Question.new
   end
 
   def create
