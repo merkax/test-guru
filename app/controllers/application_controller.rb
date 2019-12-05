@@ -8,13 +8,11 @@ class ApplicationController < ActionController::Base
   private
 
   def authenticate_user!
+    session[:source_path] = request.fullpath
+
     unless current_user
-      # cookies[:path] = request.fullpath
       redirect_to login_path, alert: 'Подтвердите Вашу почту и пароль'
     end
-  
-    сookies[:email] = current_user&.email
-
   end
 
   def current_user
@@ -24,5 +22,4 @@ class ApplicationController < ActionController::Base
   def logged_in?
     current_user.present?
   end
-
 end

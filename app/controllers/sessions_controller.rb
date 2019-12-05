@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_back(fallback_location: root_path)
+      redirect_to session[:source_path] || root_path
     else
       flash.now[:alert] = 'Введите Вашу почту и пароль'
       render :new
@@ -18,7 +18,6 @@ class SessionsController < ApplicationController
   def destroy
     session.delete(:user_id)
     @current_user = nil
-    redirect_to root_path
+    redirect_to login_path
   end
-
 end
