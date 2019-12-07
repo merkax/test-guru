@@ -14,10 +14,10 @@ class SessionsController < ApplicationController
       render :new
     end
   end
-  
+
   def destroy
-    session.delete(:user_id)
     @current_user = nil
+    reset_session
     redirect_to login_path
   end
 end

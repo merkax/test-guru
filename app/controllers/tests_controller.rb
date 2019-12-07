@@ -2,7 +2,6 @@ class TestsController < ApplicationController
 
   before_action :authenticate_user!
   before_action :find_test, only: %i[show edit update destroy start]
-  before_action :find_user, only: :start
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
 
@@ -55,10 +54,6 @@ class TestsController < ApplicationController
     @test = Test.find(params[:id])
   end
 
-  def find_user
-    @user = User.first
-  end
-  
   def test_params
     params.require(:test).permit(:title, :level, :category_id, :author_id)
   end
