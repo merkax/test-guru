@@ -1,0 +1,5 @@
+<h1>Редактирование <%= @answer.question.body %> ответа </h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Назад', admin_question_path(@answer.question) %>
