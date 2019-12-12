@@ -11,6 +11,7 @@ ru:
     new_question: "Новый ответ"
     edit_question: "Редактировать вопрос"
     show_answer: "Посмотреть"
+    root_test_guru: "Тест Гуру"
   delete_confirm: "Вы уверены?"
 
   helpers:
@@ -91,4 +92,8 @@ ru:
   tests_mailer:
     completed_test:
       subject: "Вы завершили выполнение теста на TestGuru!"
+
+  layouts:
+    navbar:
+      # welcome: "Добро пожаловать, Гуру"
 
