@@ -6,7 +6,7 @@
 
 <h3><%= t('.answer') %>: </h3>
 
-<%= link_to t('buttons.new_question'), new_admin_question_answer_path(@question) %>
+<%= link_to t('buttons.create_answer'), new_admin_question_answer_path(@question) %>
 
 <ol>
   <%= render @question.answers %>

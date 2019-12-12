@@ -8,7 +8,7 @@ ru:
     logout: "Выход"
     create_question: "Создать вопрос"
     edit_test: "Редактировать тест"
-    new_question: "Новый ответ"
+    create_answer: "Новый ответ"
     edit_question: "Редактировать вопрос"
     show_answer: "Посмотреть"
     root_test_guru: "Тест Гуру"
@@ -23,6 +23,10 @@ ru:
       test:
         create: "Создать Тест"
         update: "Обновить Тест"
+      answers:
+          create: "Создать ответ"
+      question:
+          create: "Создать вопрос"
     label:
       test:
         title: "Название"

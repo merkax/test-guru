@@ -8,7 +8,7 @@ en:
     logout: "Logout"
     create_question: "Create questions"
     edit_test: "Edit test"
-    new_question: "New question"
+    create_answer: "New answer"
     edit_question: "Edit question"
     show_answer: "Show"
     root_test_guru: "Test guru"
@@ -23,6 +23,10 @@ en:
       test:
         create: "Create Test"
         update: "Update Test"
+      answers:
+          create: "Create answer"
+      question:
+          create: "Create question"
     label:
       test:
         title: "Title"
