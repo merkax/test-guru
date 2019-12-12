@@ -1,16 +1,16 @@
-<h2><%= @question.test.title %> вопрос</h2>
+<h2><%= t('.header', title: @question.test.title) %></h2>
 
 <p>
   <%= @question.body %>
 </p>
 
-<h3>Ответы: </h3>
+<h3><%= t('.answer') %>: </h3>
 
-<%= link_to 'Новый ответ', new_admin_question_answer_path(@question) %>
+<%= link_to t('buttons.new_question'), new_admin_question_answer_path(@question) %>
 
 <ol>
   <%= render @question.answers %>
 </ol>
 
-<%= link_to 'Редактировать вопрос', edit_admin_question_path(@question)%>
-<%= link_to 'Назад', admin_test_path(@question.test) %>
+<%= link_to t('buttons.edit_question'), edit_admin_question_path(@question)%>
+<%= link_to t('buttons.back'), admin_test_path(@question.test) %>

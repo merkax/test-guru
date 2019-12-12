@@ -1,4 +1,4 @@
-<h1>Создание нового ответа</h1>
+<h1><%= t('.header') %></h1>
 
 <p>
   <%= @question.body %>
@@ -6,4 +6,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Назад', admin_question_path(@question) %>
+<%= link_to t('buttons.back'), admin_question_path(@question) %>

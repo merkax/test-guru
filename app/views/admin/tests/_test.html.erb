@@ -2,10 +2,10 @@
   <td><%= link_to test.title, admin_test_path(test) %></td>
   <td><%= test_level(test) %></td>
   <td><%= test.questions.count %></td>
-  <td><%= link_to 'Изменить', edit_admin_test_path(test) %></td>
+  <td><%= link_to t('buttons.edit'), edit_admin_test_path(test) %></td>
   <td>
-      <%= link_to 'Удалить',
+      <%= link_to t('buttons.delete'),
                   admin_test_path(test),
                   method: :delete,
-                  data:   { confirm: 'Вы уверены?'} %></td>
+                  data:   { confirm: t('delete_confirm')} %></td>
 </tr>

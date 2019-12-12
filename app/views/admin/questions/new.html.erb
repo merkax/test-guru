@@ -1,5 +1,5 @@
-<h1>Создание нового вопроса</h1>
+<h1><%= t('.header') %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Назад', admin_test_path(@test) %>
+<%= link_to t('buttons.back'), admin_test_path(@test) %>

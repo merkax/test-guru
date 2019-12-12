@@ -1,5 +1,5 @@
-<h1>Редактирование <%= @answer.question.body %> ответа </h1>
+<h1><%= t('.header', body: @answer.question.body) %> </h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Назад', admin_question_path(@answer.question) %>
+<%= link_to t('buttons.back'), admin_question_path(@answer.question) %>
