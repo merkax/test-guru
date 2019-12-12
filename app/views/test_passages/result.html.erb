@@ -2,14 +2,14 @@
 
 <% if @test_passage.success? %>
   <p>
-    Ваш результат: <span class="success"> <%= @test_passage.percent_correct %></span> %.
-    Тест успешно пройден.
+    <%= t('.result') %> <span class="success"> <%= @test_passage.percent_correct %></span> %.
+    <%= t('.succes_test') %>
   </p>
   <% else %>
   <p>
-    Ваш результат: <span class="fail"> <%= @test_passage.percent_correct %></span> %.
-    Тест не пройден.
+    <%= t('.result') %> <span class="fail"> <%= @test_passage.percent_correct %></span> %.
+    <%= t('.fail_test') %>
   </p>
 <% end %>
 
-<%= link_to 'Список всех тестов', tests_path %>
+<%= link_to t('buttons.all_tests'), tests_path %>

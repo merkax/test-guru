@@ -12,6 +12,8 @@ ru:
     edit_question: "Редактировать вопрос"
     show_answer: "Посмотреть"
     root_test_guru: "Тест Гуру"
+    next: "Дальше"
+    all_tests: "Список всех тестов"
   delete_confirm: "Вы уверены?"
 
   helpers:
@@ -41,6 +43,12 @@ ru:
   test_passages:
     result:
       header: "Тест %{title} успешно завершен!"
+      success_test: "Тест успешно пройден."
+      fail_test: "Тест не пройден."
+      result: "Ваш результат:"
+    show:
+      header: "Прохождение теста %{title}"
+      quest_from_total: "Вопрос %{current} из %{total}"
 
   tests:
     index:
@@ -96,5 +104,6 @@ ru:
   layouts:
     navbar:
       welcome: "Добро пожаловать, Гуру"
+      logout: "Выход"
       sign_up: "Регистрация"
       sign_in: "Войти"
