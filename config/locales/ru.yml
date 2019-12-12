@@ -95,5 +95,6 @@ ru:
 
   layouts:
     navbar:
-      # welcome: "Добро пожаловать, Гуру"
-
+      welcome: "Добро пожаловать, Гуру"
+      sign_up: "Регистрация"
+      sign_in: "Войти"

@@ -91,6 +91,6 @@ en:
 
   layouts:
     navbar:
-      # welcome: "Добро пожаловать, Гуру"
-      registration: "Регистрация"
-      enter: "Enter"
+      welcome: "Welcome, Guru"
+      sign_up: "Sign up"
+      sign_in: "Login"
