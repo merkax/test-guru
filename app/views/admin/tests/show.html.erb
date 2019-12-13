@@ -14,10 +14,9 @@
 
 <h3><%= t('question_test') %>:</h3>
 
-<ol>
+<table class="table table-striped">
  <%= render @test.questions %> 
-</ol>
+</table>
 
-</br>
 <%= link_to t('buttons.edit_test'), edit_admin_test_path(@test) %>
 <%= link_to t('buttons.back'), admin_tests_path %>

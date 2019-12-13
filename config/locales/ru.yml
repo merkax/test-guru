@@ -81,7 +81,7 @@ ru:
         level: "Уровень"
         question_test: "Вопросы теста"
     nav:
-      panel: "Панель администратора"
+      header: "Тест Гуру"
       welcome: "Добро пожаловать, Гуру"
     questions:
       edit:
@@ -111,3 +111,8 @@ ru:
       logout: "Выход"
       sign_up: "Регистрация"
       sign_in: "Войти"
+      header: "Тест Гуру"
+      panel: "Панель администратора"
+    admin:
+      header: "Тест Гуру"
+      panel: "Панель администратора"

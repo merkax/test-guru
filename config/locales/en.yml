@@ -76,9 +76,9 @@ en:
         title: "Name test: "
         level: "Level"
         question_test: "Question test"
-      nav:
-        panel: "The panel Administration"
-        welcome: "Welcome, Guru"
+    nav:
+      header: "Test Guru"
+      welcome: "Welcome, Guru"
     questions:
       edit:
         header: "Edit question: %{body}"
@@ -107,3 +107,8 @@ en:
       logout: "Logout"
       sign_up: "Sign up"
       sign_in: "Login"
+      header: "Test Guru"
+      panel: "The panel Administration"
+    admin:
+      header: "Test Guru"
+      panel: "The panel Administration"
