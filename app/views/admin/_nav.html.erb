@@ -1,5 +1,8 @@
 <nav class="navbar navbar-light bg-light nav-admin">
-  <div class="nav-admin title"><%= link_to t('.header'), root_path %> </div>
+  <div >
+    <%= link_to t('.header'), root_path %> |
+    <%= link_to t('.view_gists'), admin_gists_path %>
+  </div>
 
   <div class="nav-admin user">
     <%= t('.welcome') %> <b class="nav-admin user-email"> <%= current_user.first_name %> </b>|

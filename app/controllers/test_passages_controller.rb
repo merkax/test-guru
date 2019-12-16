@@ -23,11 +23,13 @@ class TestPassagesController < ApplicationController
   def gist
     service = GistQuestionService.new(@test_passage.current_question)
     result = service.call
+    
+    if service.success?
+      current_user.gists.create(question: @test_passage.current_question, url: result.html_url)
 
-    flash_options = if service.success?
-      { notice: t('.success', link: result.html_url, target: '_blank' )}
+      flash_options = { notice: " #{t('.success')} #{ view_context.link_to t('.view'), result.html_url, target: '_blank' }" }
     else
-      { alert: t('.failure')}
+      flash_options = { alert: t('.failure')}
     end
 
     redirect_to @test_passage, flash_options

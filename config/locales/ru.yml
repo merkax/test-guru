@@ -55,8 +55,9 @@ ru:
       quest_from_total: "Вопрос %{current} из %{total}"
       gist: "Запомнить вопрос"
     gist:
-      success: "Gist успешно сохранен - %{link}"
+      success: "Gist успешно сохранен -"
       failure: "Во время сохранения gist произошла ошибка"
+      view: "Посмотреть на Github"
 
   tests:
     index:
@@ -87,6 +88,7 @@ ru:
     nav:
       header: "Тест Гуру"
       welcome: "Добро пожаловать, Гуру"
+      view_gists: "Созданные Gist"
     questions:
       edit:
         header: "Редактирование вопроса: %{body}"
@@ -104,6 +106,13 @@ ru:
         question: "Вопрос"
         answer: "Ответы"
         correct: "Корректность"
+    gists:
+      index:
+        header: "Список созданных gists"
+        question: "Вопрос"
+        email: "Почта"
+        url: "gists url"
+
 
   tests_mailer:
     completed_test:

@@ -53,6 +53,7 @@ en:
     gist:
       success: "Gist was successfully created - %{link}"
       failure: "An error occurred while saving gist"
+      view: "View on Github"
 
   tests:
     index:
