@@ -49,8 +49,9 @@ en:
     show:
       header: "Passing the %{title} test"
       quest_from_total: "Question %{current} from %{total}"
+      gist: "Gist Question"
     gist:
-      success: "Gist was successfully created"
+      success: "Gist was successfully created - %{link}"
       failure: "An error occurred while saving gist"
 
   tests:
@@ -115,3 +116,8 @@ en:
     admin:
       header: "Test Guru"
       panel: "The panel Administration"
+
+  services:
+    gist_question_service:
+      gist_params:
+        title: "A question about %{title} from TestGuru"

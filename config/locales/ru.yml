@@ -53,8 +53,9 @@ ru:
     show:
       header: "Прохождение теста %{title}"
       quest_from_total: "Вопрос %{current} из %{total}"
+      gist: "Запомнить вопрос"
     gist:
-      success: "Gist успешно сохранен"
+      success: "Gist успешно сохранен - %{link}"
       failure: "Во время сохранения gist произошла ошибка"
 
   tests:
@@ -119,3 +120,8 @@ ru:
     admin:
       header: "Тест Гуру"
       panel: "Панель администратора"
+      
+  services:
+    gist_question_service:
+      gist_params:
+        title: "Вопрос %{title} из ТестГуру"
