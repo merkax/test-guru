@@ -53,6 +53,9 @@ ru:
     show:
       header: "Прохождение теста %{title}"
       quest_from_total: "Вопрос %{current} из %{total}"
+    gist:
+      success: "Gist успешно сохранен"
+      failure: "Во время сохранения gist произошла ошибка"
 
   tests:
     index:

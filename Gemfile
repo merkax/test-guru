@@ -25,6 +25,13 @@ gem 'jbuilder', '~> 2.7'
 # Auth
 gem 'devise', '~> 4.0'
 
+# Networking
+gem 'faraday'
+
+# Github
+gem "octokit", "~> 4.0"
+
+
 # Localization
 gem 'rails-i18n'
 
@@ -43,6 +50,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '~> 0.12.2'
+  gem 'dotenv-rails'
 end
 
 group :development do

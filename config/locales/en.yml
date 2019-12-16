@@ -49,6 +49,9 @@ en:
     show:
       header: "Passing the %{title} test"
       quest_from_total: "Question %{current} from %{total}"
+    gist:
+      success: "Gist was successfully created"
+      failure: "An error occurred while saving gist"
 
   tests:
     index:
