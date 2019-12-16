@@ -88,7 +88,8 @@ ru:
     nav:
       header: "Тест Гуру"
       welcome: "Добро пожаловать, Гуру"
-      view_gists: "Созданные Gist"
+      view_gists: "Созданные Гист"
+      link_to_gist: "Ссылка на Гист"
     questions:
       edit:
         header: "Редактирование вопроса: %{body}"
@@ -108,10 +109,10 @@ ru:
         correct: "Корректность"
     gists:
       index:
-        header: "Список созданных gists"
+        header: "Список Gists"
         question: "Вопрос"
         email: "Почта"
-        url: "gists url"
+        url: "Ссылки к Gists"
 
 
   tests_mailer:

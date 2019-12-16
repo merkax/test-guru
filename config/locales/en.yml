@@ -84,6 +84,8 @@ en:
     nav:
       header: "Test Guru"
       welcome: "Welcome, Guru"
+      view_gists: "Created Gist"
+      link_to_gist: "Link to Gist"
     questions:
       edit:
         header: "Edit question: %{body}"
@@ -101,6 +103,12 @@ en:
         question: "Question"
         answer: "Answers"
         correct: "Correct"
+    gists:
+      index:
+        header: "List created by gists"
+        question: "Question"
+        email: "Email"
+        url: "Links to Gist"
 
   tests_mailer:
     completed_test:
