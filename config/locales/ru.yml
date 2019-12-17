@@ -55,7 +55,8 @@ ru:
       quest_from_total: "Вопрос %{current} из %{total}"
       gist: "Запомнить вопрос"
     gist:
-      success: "Gist успешно сохранен -"
+      success: "Gist успешно сохранен "
+      # success: "Gist успешно сохранен - %{link}"
       failure: "Во время сохранения gist произошла ошибка"
       view: "Посмотреть на Github"
 
