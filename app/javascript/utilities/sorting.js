@@ -10,16 +10,14 @@ function sortRowsByTitle() {
   // Nodelist
   var rows = table.querySelectorAll('tr')
   var sortedRows = []
-
+  
   // select all table rows except the first one which is the header
   for (var i = 1; i < rows.length; i++) {
     sortedRows.push(rows[i])
   }
 
-  // var arrowUp = this.querySelector('.octicon-arrow-up')
-
   if (this.querySelector('.octicon-arrow-up').classList.contains('hide')) {
-    sortedRows.sort(compareRowsAsc)
+    sortedRows.sort(compareRowsAsc) // <=>
     this.querySelector('.octicon-arrow-up').classList.remove('hide')
     this.querySelector('.octicon-arrow-down').classList.add('hide')
   } else {
@@ -27,7 +25,6 @@ function sortRowsByTitle() {
     this.querySelector('.octicon-arrow-down').classList.remove('hide')
     this.querySelector('.octicon-arrow-up').classList.add('hide')
   }
-  // sortedRows.sort(compareRowsAsc) // <=>
 
   var sortedTable = document.createElement('table')
 
