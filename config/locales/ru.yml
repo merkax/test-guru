@@ -115,7 +115,6 @@ ru:
         email: "Почта"
         url: "Ссылки к Gists"
 
-
   tests_mailer:
     completed_test:
       subject: "Вы завершили выполнение теста на TestGuru!"
