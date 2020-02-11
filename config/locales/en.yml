@@ -3,6 +3,7 @@ en:
     start_test: "Start"
     create_test: "Create test"
     edit: "Edit"
+    show: "Show"
     delete: "Delete"
     back: "Back"
     logout: "Logout"

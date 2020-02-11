@@ -3,6 +3,7 @@ ru:
     start_test: "Начать"
     create_test: "Создать тест"
     edit: "Изменить"
+    show: "Посмотреть"
     delete: "Удалить"
     back: "Назад"
     logout: "Выход"
