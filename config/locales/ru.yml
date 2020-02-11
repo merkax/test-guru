@@ -4,6 +4,7 @@ ru:
     create_test: "Создать тест"
     edit: "Изменить"
     show: "Посмотреть"
+    cancel: "Отмена"
     delete: "Удалить"
     back: "Назад"
     logout: "Выход"

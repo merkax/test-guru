@@ -4,6 +4,7 @@ en:
     create_test: "Create test"
     edit: "Edit"
     show: "Show"
+    cancel: "Cancel"
     delete: "Delete"
     back: "Back"
     logout: "Logout"

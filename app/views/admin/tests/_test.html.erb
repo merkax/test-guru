@@ -12,7 +12,7 @@
   <td class="align-middle">
       <%= link_to t('buttons.edit'),
                   edit_admin_test_path(test),
-                  data: { test_id: test.id },
+                  data: { test_id: test.id, old_button: t('buttons.edit'), new_button: t('buttons.cancel') },
                   class: "btn btn-outline-info form-inline-link" %></td>
   <td class="align-middle">
       <%= link_to t('buttons.delete'),
