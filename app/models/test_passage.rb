@@ -33,6 +33,11 @@ class TestPassage < ApplicationRecord
   def current_question_position
     test.questions.order(:id).where('id < ?', current_question.id).count + 1
   end
+
+  def percent_progress
+    (current_question_position.to_f / total_test_question) * 100
+  end
+  
   
   private
   
