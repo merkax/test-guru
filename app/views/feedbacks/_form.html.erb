@@ -1,0 +1,13 @@
+<%= form_with model:@feedback, local: true do |form| %>
+  <%= render 'shared/errors', resource: @feedback %>
+
+  <div class="form-group">
+    <p>
+      <%= form.label :message %>
+      <%= form.text_area :message, class: 'form-control', id: :feedback_message, rows: 7, cols: 60, placeholder: 'Enter message' %>
+    </p>
+  </div>
+  <div>
+    <%= form.submit class: "btn btn-outline-info" %>
+  </div>
+<% end %>
