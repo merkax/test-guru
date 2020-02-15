@@ -14,8 +14,8 @@
 
   tests = Test.create!([
                         { title: 'Ruby', level: 2, category_id: categories[1].id, author_id: users[0].id },
-                        { title: 'HTML', level: 1, category_id: categories[0].id, author_id: user[0].id },
-                        { title: 'JavaScript', level: 2, category_id: categories[0].id, author_id: user[0].id }
+                        { title: 'HTML', level: 1, category_id: categories[0].id, author_id: users[0].id },
+                        { title: 'JavaScript', level: 2, category_id: categories[0].id, author_id: users[0].id }
                       ])
 
   questions = Question.create!([
