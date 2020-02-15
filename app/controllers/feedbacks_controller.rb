@@ -9,8 +9,8 @@ class FeedbacksController < ApplicationController
     @feedback = current_user.feedbacks.new(feedback_params)
 
     if @feedback.save
-
-      redirect_to tests_path#, notice: t('.success')
+      FeedbacksMailer.feedback_message(@feedback).deliver_now
+      redirect_to tests_path, notice: t('.success')
     else
       render :new
     end
