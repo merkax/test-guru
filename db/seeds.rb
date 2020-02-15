@@ -26,13 +26,13 @@
 
   answers = Answer.create!([
                             {
-                              body:'He is Ruby creator'
-                              correct: true
+                              body:'He is Ruby creator',
+                              correct: true,
                               question_id: questions[0].id
                             },
                             {
-                              body:'He is HTML creator'
-                              correct: false
+                              body:'He is HTML creator',
+                              correct: false,
                               question_id: questions[0].id
                             }
                           ])
