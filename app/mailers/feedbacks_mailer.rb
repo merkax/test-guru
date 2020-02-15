@@ -7,3 +7,4 @@ class FeedbacksMailer < ApplicationMailer
 
     mail to: @admin #ENV['FEEDBACK_EMAIL']
   end
+end
