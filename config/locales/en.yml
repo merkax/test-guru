@@ -36,6 +36,8 @@ en:
         category_id: "Category"
       question:
         body: "Body"
+      feedback:
+        message: 'message'
   shared:
     errors:
       header:
@@ -132,3 +134,9 @@ en:
     gist_question_service:
       gist_params:
         title: "A question about %{title} from TestGuru"
+
+  feedbacks:
+    new:
+      create_new_feedback: "Write feedback for administration"
+    create:
+      success: "Message sent successfully"

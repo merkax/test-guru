@@ -38,6 +38,9 @@ ru:
         body: "Название"
       answer:
         body: "Название"
+      feedback:
+        message: 'Сообщение'
+
   shared:
     errors:
       header:
@@ -137,3 +140,10 @@ ru:
     gist_question_service:
       gist_params:
         title: "Вопрос %{title} из ТестГуру"
+
+  feedbacks:
+    new:
+      create_new_feedback: "Написать сообщение для администратора"
+    create:
+      success: "Сообщение успешно отправлено"
+
