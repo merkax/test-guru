@@ -70,7 +70,7 @@ Rails.application.configure do
       tls: true,
       address:              'smtp.yandex.ru',
       port:                 465,
-      domain: 'test-guru-from-merkax.herokuapp.com',
+      # domain: 'test-guru-from-merkax.herokuapp.com',
       user_name:            ENV['SMTP_USERNAME'],
       password:             ENV['SMTP_PASSWORD'],
       authentication:       'plain',
