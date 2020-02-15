@@ -1,5 +1,5 @@
   users = User.create!([
-                        {email: 'mishagrishkinandco@gmail.com',
+                        {email: 'mishabigr@yandex.ru',
                         password: 'secret1234', 
                         password_confirmation: 'secret1234',
                         first_name: 'Mike', 
