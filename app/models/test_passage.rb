@@ -38,7 +38,6 @@ class TestPassage < ApplicationRecord
     ((current_question_position - 1).to_f / total_test_question) * 100
   end
   
-  
   private
   
   def before_validation_set_first_question

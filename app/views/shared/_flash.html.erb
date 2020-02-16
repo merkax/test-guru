@@ -2,7 +2,7 @@
 
   <% flash.each do |key, message| %>
     <div class="alert <%= flash_message(key)%>">
-      <%= message %>
+      <%= message.html_safe %>
     </div>
   <% end %>
 </div>
