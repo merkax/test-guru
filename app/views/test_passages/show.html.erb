@@ -11,9 +11,9 @@
   </b>
 </p>
 
-<div class="timer" data-timer="<%= @test_passage.time_left %>">
+<div class="timer" data-timer="<%= @test_passage.time_left(@test_passage) %>">
   <div >
-      <%= t('.time_left', time: @test_passage.time_left) %>
+      <%= t('.time_left', time: @test_passage.time_left(@test_passage)) %>
   </div>
 </div>
 
