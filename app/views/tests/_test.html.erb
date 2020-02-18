@@ -2,5 +2,8 @@
   <td><%= test.title %></td>
   <td><%= test_level(test) %></td>
   <td><%= test.questions.count %></td>
-  <td><%= button_to t('buttons.start_test'), start_test_path(test), class: "btn btn-outline-info" %></td>
+  <td><%= button_to t('buttons.start_test'), 
+                    start_test_path(test),
+                    class: "btn btn-outline-info",
+                    disabled: test.questions.count.zero? %></td>
 </tr>

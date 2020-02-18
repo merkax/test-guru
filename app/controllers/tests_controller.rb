@@ -11,7 +11,8 @@ class TestsController < ApplicationController
 
   def start
     current_user.tests.push(@test)
-    redirect_to current_user.test_passage(@test) unless current_user.test_passage(@test).completed?
+    
+    redirect_to current_user.test_passage(@test) #unless current_user.test_passage(@test).completed?
   end
 
   private
