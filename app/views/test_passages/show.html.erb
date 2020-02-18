@@ -11,6 +11,12 @@
   </b>
 </p>
 
+<div class="timer" data-timer="<%= @test_passage.time_left %>">
+  <div >
+      <%= t('.time_left', time: @test_passage.time_left) %>
+  </div>
+</div>
+
 <div class="progress" >
   <div class="progress-bar" role="progressbar" data-progress="<%= @test_passage.percent_progress %>" aria-valuemax="100">
    <%= @test_passage.percent_progress %>

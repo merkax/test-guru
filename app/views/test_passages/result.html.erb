@@ -1,9 +1,9 @@
 <h2><%= t('.header', title: @test_passage.test.title) %> </h2>
 
-<% if @test_passage.success? %>
+<% if @test_passage.success?  && !@test_passage.time_out? %>
   <p>
     <%= t('.result') %> <span class="success"> <%= @test_passage.percent_correct %></span> %.
-    <%= t('.succes_test') %>
+    <%= t('.success_test') %>
   </p>
   <% else %>
   <p>
