@@ -50,8 +50,8 @@ class TestPassage < ApplicationRecord
     test.timer - spent_time <= 0
   end
 
-  def time_left(test_passage)
-    test_passage.test.timer - test_passage.spent_time if test_passage.test.timer > 0
+  def time_left
+    test.timer - spent_time if test.timer > 0
   end
 
   private
