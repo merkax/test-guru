@@ -1,16 +1,18 @@
-  <div class="card text-center navbar fixed-bottom">
-    <div class="card-body">
-      <p>
-      <%= current_year %>
-      </p>
-      Автор приложения: Михаил Гришкин.
-      <%= github_url('merkax', 'test-guru') %> 
-      <p>
-      <%= link_to 'Учебный проект в онлайн-школе Thinknetica', 'https://thinknetica.com', target: '_blank'%>
-      </p>
-      <p>
-      <%= link_to 'Обратная связь', new_feedback_path %>
-      </p>
-    </div>
+  <div class="navbar-fixed-bottom row-fluid card-footer text-center">
+    <div class="container"> 
+        <div class="card-body navbar-inner">
+        <p>
+          <%= current_year %>
+        </p>
+          Автор приложения: Михаил Гришкин.
+          <%= github_url('merkax', 'test-guru') %> 
+        <p>
+          <%= link_to 'Учебный проект в онлайн-школе Thinknetica', 'https://thinknetica.com', target: '_blank'%>
+        </p>
+        <p>
+          <%= link_to 'Обратная связь', new_feedback_path %>
+        </p>
+      </div>
   </div>
+</div>
 

@@ -2,10 +2,16 @@ en:
   activerecord:
     models:
       test: "Test"
+      badge: "Badge"
 
     attributes:
       test:
         title: "Title"
+      question:
+        body: "Body"
+      answer:
+        body: "body"
+        question: "question"
 
     errors:
       messages:

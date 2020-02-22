@@ -3,6 +3,7 @@
     <% if current_user&.admin? %>
       | <span style="font-weight: bold"><%= link_to t('.panel'), admin_tests_path %></span>
     <% end %>
+      | <span style="font-weight: bold"><%= link_to t('.view_badges'),  badges_path %></span>
   </div>
 
   <span class="navbar-text">
