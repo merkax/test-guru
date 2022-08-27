@@ -16,6 +16,8 @@ en:
     root_test_guru: "Test guru"
     next: "Next"
     all_tests: "List of all tests"
+    create_badge: "Create badge"
+    edit_badge: "Edit badge"
   delete_confirm: "Are you sure?"
 
   helpers:
@@ -39,6 +41,13 @@ en:
         body: "Body"
       feedback:
         message: 'message'
+      badge:
+        title: "title"
+        value: "rule value "
+        rule: "rule"
+        image: "image"
+
+
   shared:
     errors:
       header:
@@ -68,6 +77,15 @@ en:
       level: "Level"
       question: "Question"
       action: "Action"
+    badges:
+      index:
+        header_all: "All existing badges"
+        header_user: "Available Badges"
+        title: "Title"
+        image: "Image"
+        action: "Action"
+        rule: "Rule:"
+        value: "Value:"
 
   admin:
     tests:
@@ -91,6 +109,7 @@ en:
       header: "Test Guru"
       welcome: "Welcome, Guru"
       view_gists: "Created Gist"
+      view_badges: "Badges"
       link_to_gist: "Link to Gist"
     questions:
       edit:
@@ -115,6 +134,28 @@ en:
         question: "Question"
         email: "Email"
         url: "Links to Gist"
+    badges:
+      create:
+        success: "Badge passed successfully"
+      index:
+        header: "Badges"
+        title: "Title"
+        action: "Action"
+        rule: "Rule:"
+        value: "Value:"
+      new:
+        create_new_badge: "Создать новый бэйдж"
+      edit:
+        header: "Edit %{title} badge"
+      show:
+        title: "Title badge:"
+        rule: "Rule:"
+        value: "Value:"
+      form:
+        by_category: "All tests from one category"
+        first_attempt: "Test passed on first try"
+        by_level: "All tests of a certain level"
+        promt: "Select rule:"
 
   tests_mailer:
     completed_test:
@@ -128,6 +169,7 @@ en:
       sign_in: "Login"
       header: "Test Guru"
       panel: "The panel Administration"
+      view_badges: "Badges"
     admin:
       header: "Test Guru"
       panel: "The panel Administration"

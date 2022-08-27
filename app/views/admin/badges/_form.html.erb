@@ -1,0 +1,36 @@
+<%= form_with model:[:admin, @badge], local: true do |form| %>
+  <%= render 'shared/errors', resource: @badge %>
+
+  <div class="form-group">
+    <p>
+      <%= form.label :title %>
+      <%= form.text_field :title, id: :badge_title %>
+    </p>
+
+    <p>
+      <%= form.label :rule %>
+      <%= form.select :rule,
+                          [
+                            [t('.by_category'), by_category],
+                            [t('.first_attempt'), first_attempt],
+                            [t('.by_level'), by_level]
+                          ],
+                          prompt: t('.promt') %>
+    </p>
+
+    <p>
+      <%= form.label :value %>
+      <%= form.text_field :value, id: :badge_title %>
+    </p>
+
+    <p>
+      <%= form.label :image %>
+      <%= image_tag ("https://image.flaticon.com/icons/png/128/1579/1579489.png") %>
+      <%#= form.image_tag ("/badges/#{@badge.rule}.png", size: "50x50") %>
+    </p>
+
+   </div>
+      <%= form.submit  class: "btn btn-outline-info" %>
+    <div>
+  </div>
+<% end %>

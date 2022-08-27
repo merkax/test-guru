@@ -1,0 +1,28 @@
+<div class="row justify-content-center mt-3">
+  <div class="col col-md-4">
+    <h1><%= t('.header') %></h1>
+  </div>
+
+  <div class="col-12 ">
+    <%= link_to t('buttons.create_badge'), new_admin_badge_path, class: "btn btn-outline-info" %>
+
+    <%= render 'shared/errors', resource: @badge %>
+      
+    <table class="table table-striped mt-3 text-center">
+      <thead>
+        <tr>
+          <th class="sort-by-title pointer">
+            <%= t('.title') %>
+          </th>
+          <th><%= t('.image') %></th>
+          <th><%= t('.rule') %></th>
+          <th><%= t('.value') %></th>
+          <th colspan="3 "><%= t('.action') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @badges %>
+      <tbody>
+    </table>
+  </div> 
+</div>

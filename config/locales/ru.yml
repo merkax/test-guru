@@ -16,6 +16,8 @@ ru:
     root_test_guru: "Тест Гуру"
     next: "Дальше"
     all_tests: "Список всех тестов"
+    create_badge: "Создать бэйдж"
+    edit_badge: "Изменить бэйдж"
   delete_confirm: "Вы уверены?"
 
   helpers:
@@ -41,6 +43,11 @@ ru:
         body: "Название"
       feedback:
         message: 'Сообщение'
+      badge:
+        title: "Название"
+        value: "Значение правила"
+        rule: "Правило"
+        image: "Изображение"
 
   shared:
     errors:
@@ -74,6 +81,15 @@ ru:
       level: "Уровень"
       question: "Вопросы"
       action: "Действия"
+  badges:
+      index:
+        header_all: "Все существующие бэйджы"
+        header_user: "Доступные бэйджы"
+        title: "Название бэйджа"
+        image: "Изображение"
+        action: "Действия"
+        rule: "Правило:"
+        value: "Значение:"
 
   admin:
     tests:
@@ -97,6 +113,7 @@ ru:
       header: "Тест Гуру"
       welcome: "Добро пожаловать, Гуру"
       view_gists: "Созданные Гист"
+      view_badges: "Бэйджи"
       link_to_gist: "Ссылка на Гист"
     questions:
       edit:
@@ -121,6 +138,29 @@ ru:
         question: "Вопрос"
         email: "Почта"
         url: "Ссылки к Gists"
+    badges:
+      create:
+        success: "Бэйдж успешно создан"
+      index:
+        header: "Доступные бэйджы"
+        title: "Название бэйджа"
+        image: "Изображение"
+        action: "Действия"
+        rule: "Правило:"
+        value: "Значение:"
+      new:
+        create_new_badge: "Создать новый бэйдж"
+      edit:
+        header: "Редактирование %{title} бэйджа"
+      show:
+        title: "Название бэйджа:"
+        rule: "Правило:"
+        value: "Значение:"
+      form:
+        by_category: "Все тесты из одной категории"
+        first_attempt: "Тест пройден с первой попытки"
+        by_level: "Все тесты определенного уровня"
+        promt: "Выберете правило:"
 
   tests_mailer:
     completed_test:
@@ -134,10 +174,11 @@ ru:
       sign_in: "Войти"
       header: "Тест Гуру"
       panel: "Панель администратора"
+      view_badges: "Бэйджи"
     admin:
       header: "Тест Гуру"
       panel: "Панель администратора"
-      
+
   services:
     gist_question_service:
       gist_params:

@@ -1,0 +1,41 @@
+<div class="row justify-content-center mt-3">
+  <div>
+    <h1><%= t('.header_all') %></h1>
+  </div>
+
+  <div class="col-12 ">
+    <table class="table table-striped mt-3 text-center">
+      <thead>
+        <tr>
+          <th><%= t('.title') %> </th>
+          <th><%= t('.image') %></th>
+          <th><%= t('.rule') %></th>
+          <th><%= t('.value') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: "badge", collection: @badges, as: :badge %>
+      <tbody>
+    </table>
+  </div> 
+
+  <div>
+    <h1><%= t('.header_user') %></h1>
+  </div>
+
+  <div class="col-12 ">
+    <table class="table table-striped mt-3 text-center">
+      <thead>
+        <tr>
+          <th><%= t('.title') %></th>
+          <th><%= t('.image') %></th>
+          <th><%= t('.rule') %></th>
+          <th><%= t('.value') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: "badge", collection: @user_badges, as: :badge %>
+      <tbody>
+    </table>
+  </div> 
+</div>
